@@ -1,0 +1,1014 @@
+/* Все элементы */
+* {
+    font-size: 18px;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    line-height: 100%;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+
+/* Основные блоки */
+body {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    min-height: 1160px;
+    background-color: #538DFF0D;
+}
+
+/* Шапка */
+.head {
+    width: 90%;
+    max-width: 1720px;
+    height: 57px;
+    padding-top: 61px;
+    margin: 0 auto 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.head-left {
+    width: 687px;
+    height: 57px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.head-left a {
+    opacity: 35%;    
+}
+
+.head-left a:hover {
+    opacity: 1;
+}
+
+.head-right {
+    width: 505px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.logo {
+    width: 155px;
+    height: 57px;
+    background-image: url("./img/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.phone-block {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.phone-block p, .head-right a {
+    color: #606060;
+    font-weight: 700;
+}
+
+.phone {
+    width: 16px;
+    height: 16px;
+    background-image: url("./img/phone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.button {
+    width: 149px;
+    height: 53px;
+    background-color: #FEB302;
+    opacity: 45%;
+    border-radius: 10px;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.korzina p{
+    color: white;
+    font-weight: 700;    
+}
+
+.three {
+    width: 38px;
+    height: 39px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+/* Гамбургер меню для мобильных */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Стартовый экран */
+.oreshki {
+    width: 90%;
+    max-width: 1720px;
+    height: auto;
+    min-height: 861px;
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Левая часть */
+.left {
+    width: 100%;
+    max-width: 710px;
+    height: auto;
+    min-height: 636px;
+    gap: 55px;
+}
+
+/* Первый элемент */
+.brown {
+    color: #BC5D1D;
+}
+
+.thin {
+    font-weight: 200;
+}
+
+.left-first {
+    width: 100%;
+    max-width: 667px;
+    height: auto;
+    min-height: 320px;
+}
+
+.bold p {
+    color: #232323;
+    font-weight: 700;
+}
+
+.left-first p, .left-first p span {
+    font-size: clamp(60px, 12vw, 150px);
+    margin: 0;
+    line-height: 1;
+}
+
+/* Второй элемент */ 
+.fish p{
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: clamp(18px, 2.5vw, 24px);
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #605F5F;
+    max-width: 100%;
+}
+
+/* Третий элемент */
+.oreh {
+    width: 100%;
+    max-width: 642px;
+    height: auto;
+    min-height: 106px;
+    background-color: white;
+    border-radius: 25px;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.oreh-block{
+    min-height: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.oreh-block p {
+    opacity: 65%;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+.orange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 25px;
+    background-color: #FEB302;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.lupa {
+    width: 30px;
+    height: 30px;
+    background-image: url("./img/lupa1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+/* Правая часть */
+.right {
+    width: 100%;
+    max-width: 821px;
+    height: auto;
+    min-height: 861px;
+    position: relative;
+    display: block;
+    margin-left: 145px;
+    margin-top: 50px;
+}
+
+/* Картинки */
+.back-img {
+    position: absolute;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    aspect-ratio: 750/780;
+    background-image: url("./img/bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+}
+
+.front1-img {
+    position: absolute;
+    width: 45%;
+    max-width: 335px;
+    height: auto;
+    aspect-ratio: 335/519;
+    background-image: url("./img/oreshki1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 12%;
+    left: 6%;
+    z-index: 2;
+}
+
+.front2-img{
+    position: absolute;
+    width: 48%;
+    max-width: 365px;
+    height: auto;
+    aspect-ratio: 365/536;
+    background-image: url("./img/oreshki2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 32%;
+    left: 52%;
+    z-index: 3;
+}
+
+/* Основная часть */
+main {
+    width: 100%;
+    max-width: 1720px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Загаловок */
+.ass-text {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 656px;
+    height: auto;
+    margin-bottom: 70px;
+    margin-top: 170px;
+    text-align: center;
+}
+
+.ass-text h2 {
+    font-weight: 700;
+    font-size: clamp(36px, 6vw, 72px);
+    letter-spacing: 1px;
+    color: #343030;
+    line-height: 1.2;
+}
+
+/* Ссылки */
+.ass-href {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.ass-href a {
+    font-weight: 400;
+    font-size: clamp(14px, 1.5vw, 18px);
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 13.5px 20px; 
+    border-radius: 13.5px; 
+    text-align: center;
+    line-height: 21px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.ass-href a:hover {
+    background-color: #FEB302;
+}
+
+/* Ассортимент */
+.assortiment {
+    width: 100%;
+    max-width: 1720px;
+    height: auto;
+    margin: 100px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/* Блок с продуктом */
+.block {
+    width: 408px;
+    height: 670px;
+    border-radius: 27px;
+    background-color: #F6F9FF;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Картинка */
+.suho {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 376px;
+    height: 370px;
+    border-radius: 27px;
+    background-image: url("./img/suhofr.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Название, описание, цена */
+.block-text {
+    width: 100%;
+    max-width: 291px;
+    height: auto;
+    min-height: 126px;
+    gap: 15px;
+    margin: 20px auto 0;
+}
+
+.name {
+    height: auto;
+    min-height: 25px;
+}
+
+.name p {
+    font-weight: 700;
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.2;
+    letter-spacing: 0.89px;
+    color: black;
+    margin: 0;
+}
+
+.describe {
+    height: auto;
+    min-height: 47px;
+    margin: 10px 0;
+}
+
+.describe p {
+    font-weight: 400;
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: 1.4;
+    letter-spacing: 0.89px;
+    margin: 0;
+}
+
+.cost {
+    width: 100%;
+    max-width: 281px;
+    height: auto;
+    min-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.red {
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: 1.4;
+    letter-spacing: 0.89px;
+    color: #DA5C5C;
+    margin: 0;
+}
+
+.gray {
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: 1.4;
+    letter-spacing: 0.89px;
+    color: #36363640;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+/* Кнопки */
+.buttons {
+    width: 100%;
+    max-width: 376px;
+    height: auto;
+    min-height: 55px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.arrows, .search, .like {
+    width: 55px;
+    height: 55px;
+    background-color: #F8F8F8;
+    border-radius: 13.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.arrows1 {
+    width: 27px;
+    height: 19px;
+    background-image: url("./img/arrows.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+.search1 {
+    width: 20px;
+    height: 20px;
+    background-image: url("./img/lupa2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+.like1 {
+    width: 27px;
+    height: 24px;
+    background-image: url("./img/like.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+.like {
+    flex-shrink: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.like.liked {
+    background-color: red; 
+}
+
+.ass-button {
+    width: 180px;
+    height: 55px;
+    border-radius: 13.5px;
+    color: white;
+    background-color: #FEB302;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+
+/* Навигация */
+.navigation {
+    margin-top: 120px;
+    width: 90%;
+    max-width: 1720px;
+    height: auto;
+    min-height: 53px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.nav-left a, .nav-right a, .nav-right button {
+    cursor: pointer;
+}
+
+.nav-left {
+    width: 100%;
+    max-width: 945px;
+    height: auto;
+    min-height: 21px;
+    font-weight: 400;
+    font-size: clamp(14px, 1.5vw, 18px);
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-right {
+    width: 100%;
+    max-width: 264px;
+    height: auto;
+    min-height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-right button {
+    color: white;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: clamp(14px, 1.5vw, 18px);
+    letter-spacing: 0%;
+    border: none;
+    width: 125px;
+    height: 53px;
+    border-radius: 13.5px;
+    background-color: #FEB30273;
+}
+
+/* Подвал */
+footer {
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    border-color: #e5e5e5;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding: 0 20px;
+}
+
+.mods {
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 90%;
+    max-width: 1720px;
+    height: auto;
+    min-height: 264px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.mods > div {
+    width: 100%;
+    max-width: 300px;
+    min-width: 250px;
+    flex: 1;
+}
+
+.mods h3 {
+    margin: 0;
+    font-weight: 700;
+    width: auto;
+    height: auto;
+    font-size: clamp(20px, 2.5vw, 27px);
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 61px;
+    border: #5c5c5c;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+}
+
+.phone1 {
+    width: 16px;
+    height: 16px;
+    background-image: url("./img/phone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.telephone p, .pochta p, .geoloka p {
+    margin: 10px;
+}
+
+.telephone, .pochta, .geoloka {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: clamp(16px, 2vw, 20.5px);
+    letter-spacing: 0%;
+}
+
+.telephone {
+    height: auto;
+    min-height: 24px;
+}
+
+.email {
+    width: 18px;
+    height: 18px;
+    background-image: url("./img/mail.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.geo {
+    width: 20px;
+    height: 28px;
+    background-image: url("./img/location.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.geoloka {
+    height: auto;
+    min-height: 48px;
+}
+
+.pochta {
+    height: auto;
+    min-height: 24px;
+}
+
+/* Медиазапросы для адаптивности */
+
+/* Планшеты и небольшие ноутбуки (1024px - 768px) */
+@media (max-width: 1200px) {
+    .head {
+        padding-top: 40px;
+        margin-bottom: 70px;
+    }
+    
+    .oreshki {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .left {
+        margin-bottom: 50px;
+    }
+    
+    .right {
+        margin-left: 0;
+        margin-top: 0px;
+    }
+    
+    .assortiment {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .block {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .line {
+        margin: 0 auto;
+    }
+}
+
+/* Планшеты (768px - 480px) */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .head, .oreshki, main, .assortiment, .navigation, .mods {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    
+    .back-img, .front1-img, .front2-img {
+        max-width: 100%;
+    }
+
+    .head {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding-top: 30px;
+    }
+    
+    .head-left, .head-right {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .head-left a {
+        font-size: 16px;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+    
+    .head-left {
+        flex-direction: column;
+        display: none;
+    }
+    
+    .head-left.active {
+        display: flex;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 30px;
+        z-index: 100;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .oreshki {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+    
+    .left-first p, .left-first p span {
+        font-size: clamp(50px, 15vw, 100px);
+    }
+    
+    .oreh-block {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .ass-href {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .ass-href a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .assortiment {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .block {
+        max-width: 100%;
+        width: 100%;
+        min-height: auto;
+    }
+    
+    .buttons {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .nav-left {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .nav-right {
+        justify-content: center;
+    }
+    
+    .mods {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .mods > div {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .telephone, .pochta, .geoloka {
+        justify-content: center;
+    }
+
+    .line {
+        margin: 0 auto;
+    }
+}
+
+/* Мобильные устройства (480px и меньше) */
+@media (max-width: 480px) {
+    header {
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .head {
+        margin-bottom: 40px;
+    }
+    
+    .oreshki {
+        margin-top: 30px;
+        margin: 0 auto;
+    }
+    
+    .left-first p, .left-first p span {
+        font-size: clamp(40px, 12vw, 70px);
+    }
+    
+    .fish p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 30px;
+    }
+    
+    .oreh {
+        padding: 15px;
+        margin-top: 40px;
+    }
+    
+    .orange {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .lupa {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .ass-text {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    
+    .ass-text h2 {
+        font-size: 32px;
+    }
+    
+    .ass-href a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .block {
+        padding: 10px;
+    }
+    
+    .suho {
+        height: 250px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .arrows, .search, .like, .ass-button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .ass-button {
+        order: -1;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        margin-top: 150px;
+    }
+    
+    .mods {
+        gap: 30px;
+    }
+
+    .line {
+        margin: 0 auto;
+    }
+}
+
+/* Очень маленькие устройства (меньше 320px) */
+@media (max-width: 320px) {
+    .left-first p, .left-first p span {
+        font-size: 35px;
+    }
+    
+    .ass-href {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ass-href a {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .nav-left {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-right button {
+        width: 100%;
+    }
+    
+    .line {
+        margin: 0 auto;
+    }
+}
